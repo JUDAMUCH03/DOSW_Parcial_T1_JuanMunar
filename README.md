@@ -40,7 +40,7 @@
 
 **Funcionales:**
 
-UFH-01: Crear pedido en la app
+UFH-01: Crear pedido personalizado en la app
 Descripcion:Permitir al usuario crear un pedido teniendo en cuenta que debe tener minimo un producto base y un producto adicional
 Actor: Estudiante/Docente
 
@@ -55,8 +55,11 @@ Actor: Estudiante/profesor
 
 
 **No Funcionales:**
+
 UFH-RNF-01: Responder en ≤ 1.5 s para el 90% de las peticiones
 Descripcion: El Sistema debe garantizar que al menos el 90% de las peticiones diarias realizadas se reselvan de manera satisfactoria, verificando el tiempo y cada peticion en AWS S3 Buckets
 
 UFH-RNF-02: La información de los pedidos se almacena en AWS Mongo Atlas.
 Descripción: El almacenamiento de la informacion de los pedidos debe gestionarse en una base de datos relacional AWS Mongo Atlas.
+
+3. 
