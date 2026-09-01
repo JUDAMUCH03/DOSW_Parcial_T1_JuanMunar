@@ -65,3 +65,32 @@ Descripción: El almacenamiento de la informacion de los pedidos debe gestionars
 3. Casos de uso
 
 <img width="656" height="267" alt="casoUso" src="https://github.com/user-attachments/assets/ef480dd3-f4d4-4b45-bae5-c9153ec09a9c" />
+
+
+4. Plantilla analisis de requerimentos
+
+Codigo: UFH-01
+Nombre: Crear pedido personalizado en la app
+Descripcion: Permitir al usuario crear un pedido teniendo en cuenta que debe tener minimo un producto base y un producto adicional
+Como se ejecutara: Entrar a la app web, dirigirse a la seccion de crear un pedido, seleccionar el producto base obligatorio, luego poner un producto extra a eleccion, 
+Actor principal: Usuario general
+Precondiciones: Debe estar registrado como usuario de la Universidad, no debe tener un pedido en activo.
+Datos de entrada: producto base, productos extras
+Datos de salida: -
+Flujo Basico: Pide su comida con su base y extras adecuados, sigue en la linea a elegir su lugar
+Flujo Alterno: Pide demasiados productos base o extra, esto genera una alerta y debe eliminar algunos de los productos
+
+
+
+Codigo: UFH-03
+Nombre: Visualizar resumen pedido final
+Descripcion: Monitorear en un panel el estado final de mi pedido (comida, lugar de entrega), de forma detallada junto con el precio final antes de confirmar dicho pedido
+Como se ejecutara:
+Actor principal: Usuario general
+Precondiciones: Pedido aprobado en UFH-01
+Datos de entrada: -
+Datos de salida: Resumen completo de pedido, especificando la comida, el lugara  entregar, precio final.
+Flujo Basico:El usuario pidio correctamente su pedido, visibilizando el total del pedido el cual es igual a la suma del precio final del producto más el costo de la entrega.
+Flujo Alterno: EL usuario tiene el resumen de su pedido, pero aparecen cosas que no pidio o el precio no es el adecuado. El usuario debe darle a cancelar pedido.
+
+Imagenes Figma:
