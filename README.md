@@ -132,3 +132,17 @@ Tareas:
 - Tarea 1: Modelar la interfaz Producto y las clases de adiciones usando el patron Decorator para agregar ingredientes y calcular el precio de cada producto dinamicamente.  
 - Tarea 2: Desarrollar la clase PedidoBuilder para construir el pedido paso a paso y validar las reglas (maximo 5 productos, minimo $3.500 y restriccion de bloques para entrega en salon).  
 - Tarea 3: Implementar la logica de seleccion del tipo de entrega (consumo local $0, para llevar $300 o salon $1.000) e integrarla en la liquidacion total del pedido.
+
+6. Patrones Asignados
+
+Builder
+Tipo: Creacional.  
+Justificación: Permite construir paso a paso el Pedido teniendo en cuenta las cosas obligatorias y las cosas extras, este sirve muy bien ya que nos permite construir el pedido como queramos, sin temor a que este incompleto o de errores.
+
+ Decorator
+ Tipo: Estructural.  
+ Justificación: Permite añadir extras a cualquier producto base , sumando su costo y descripción, esto nos ayuda no crear muchas subclases.
+
+ Principios SOLID Aplicados
+ Single Responsibility Principle : Cada clase tiene un único propósito y cada decorador deberia gestionar un ingrediente puntual.
+Open/Closed Principle : El sistema está abierto a la extensión y cerrado a la modificación, por ejemplo si la cafetería agrega un nuevo extra o producto base, se añade una nueva clase y ella misma mira como se implementa.
