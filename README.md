@@ -70,28 +70,46 @@ Descripción: El almacenamiento de la informacion de los pedidos debe gestionars
 4. Plantilla analisis de requerimentos
 
 Codigo: UFH-01
+
 Nombre: Crear pedido personalizado en la app
-Descripcion: Permitir al usuario crear un pedido teniendo en cuenta que debe tener minimo un producto base y un producto adicional
-Como se ejecutara: Entrar a la app web, dirigirse a la seccion de crear un pedido, seleccionar el producto base obligatorio, luego poner un producto extra a eleccion, 
-Actor principal: Usuario general
-Precondiciones: Debe estar registrado como usuario de la Universidad, no debe tener un pedido en activo.
-Datos de entrada: producto base, productos extras
-Datos de salida: -
-Flujo Basico: Pide su comida con su base y extras adecuados, sigue en la linea a elegir su lugar
-Flujo Alterno: Pide demasiados productos base o extra, esto genera una alerta y debe eliminar algunos de los productos
+
+Descripcion: Permitir al usuario armar su pedido seleccionando entre 1 y 5 productos base, agregando extras opcionales a cada producto y eligiendo el metodo de entrega (consumo local, para llevar o entrega en salon).  
+
+Como se ejecutara: Entrar a la app web, ir a la seccion de crear pedido, seleccionar el producto base obligatorio, marcar las adiciones deseadas, seleccionar el metodo de entrega (indicando bloque y salon si aplica) y continuar al resumen.  
+
+Actor principal: Estudiante / Docente  
+
+Precondiciones: Estar registrado con correo institucional 
+
+Datos de entrada: Producto base elegido, lista de extras seleccionados, tipo de entrega, bloque y salon (obligatorio solo si es entrega en salon).  
+
+Datos de salida: Items agregados al pedido con desglose y subtotal actualizado en tiempo real. 
+
+Flujo Basico: El usuario selecciona su producto base, le agrega los extras que quiere, elige el metodo de entrega, el sistema calcula el subtotal y lo deja pasar a la pantalla de resumen del pedido.  
+
+Flujo Alterno:Si el usuario intenta agregar mas de 5 productos al pedido, el sistema bloquea la accion y muestra una alerta indicando que el maximo permitido son 5 productos. 
 
 
 
 Codigo: UFH-03
-Nombre: Visualizar resumen pedido final
-Descripcion: Monitorear en un panel el estado final de mi pedido (comida, lugar de entrega), de forma detallada junto con el precio final antes de confirmar dicho pedido
-Como se ejecutara:
-Actor principal: Usuario general
-Precondiciones: Pedido aprobado en UFH-01
-Datos de entrada: -
-Datos de salida: Resumen completo de pedido, especificando la comida, el lugara  entregar, precio final.
-Flujo Basico:El usuario pidio correctamente su pedido, visibilizando el total del pedido el cual es igual a la suma del precio final del producto más el costo de la entrega.
-Flujo Alterno: EL usuario tiene el resumen de su pedido, pero aparecen cosas que no pidio o el precio no es el adecuado. El usuario debe darle a cancelar pedido.
+
+Nombre: Visualizar resumen pedido
+
+Descripcion: Mostrar en un panel el desglose completo del pedido (productos, adiciones de cada uno y costo del metodo de entrega) junto con el precio final total antes de confirmar la compra.  
+
+Como se ejecutara: Al terminar de armar el pedido en UFH-01, la app muestra la pantalla de resumen donde el usuario revisa el detalle y decide si confirma la orden o se devuelve a editarla.  
+
+Actor principal: Estudiante / Docente  
+
+Precondiciones: Haber seleccionado al menos un producto base con su entrega en UFH-01.  
+
+Datos de entrada: Accion del usuario (clic en "Confirmar pedido" o "Editar pedido").
+
+Datos de salida: Resumen detallado con items, costo de entrega, total liquidado y estado CONFIRMADO al aprobarse.  
+
+Flujo Basico: El usuario ingresa al resumen, verifica que los productos y el lugar de entrega coincidan con lo pedido, el sistema confirma que el total supere el valor minimo de $3.500, el usuario presiona "Confirmar pedido" y la orden pasa a estado confirmado.  
+
+Flujo Alterno:Si el total acumulado de la orden no alcanza el valor minimo de $3.500, el sistema deshabilita el boton de confirmacion y notifica que el monto minimo del pedido debe ser de $3.500.
 
 Imagenes Figma:
 
