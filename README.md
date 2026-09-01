@@ -62,4 +62,6 @@ Descripcion: El Sistema debe garantizar que al menos el 90% de las peticiones di
 UFH-RNF-02: La información de los pedidos se almacena en AWS Mongo Atlas.
 Descripción: El almacenamiento de la informacion de los pedidos debe gestionarse en una base de datos relacional AWS Mongo Atlas.
 
-3. 
+3. Casos de uso
+
+<img width="656" height="267" alt="casoUso" src="https://github.com/user-attachments/assets/ef480dd3-f4d4-4b45-bae5-c9153ec09a9c" />
