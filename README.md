@@ -117,3 +117,18 @@ Imagenes Figma:
 
 <img width="331" height="697" alt="Screenshot 2026-09-01 155431" src="https://github.com/user-attachments/assets/c6ef16c2-438f-4bf7-ba28-d80331e23e8f" />
 
+
+5. Descomposicion de tareas
+Epica: UNIVERSITY FOOD HUB (UFH)
+
+Feature: Modulo de construccion y personalizacion de pedidos  
+
+Historia de Usuario:
+COMO estudiante o docente de la universidad
+QUIERO armar mi pedido seleccionando el producto base, agregandole extras y eligiendo la forma de entrega
+PARA recibir mi comida personalizada conociendo el precio exacto y detallado antes de confirmar el pago  
+Criterios de Aceptacion:El usuario puede agregar entre 1 y 5 productos por pedido, cada uno con sus propios extras opcionales.  El sistema debe calcular el precio sumando la base mas los extras y el costo del metodo de entrega.  El monto total del pedido debe ser minimo de $3.500.  Si se escoge entrega en salon, se cobra un adicional de $1.000 y se debe validar que el bloque sea solo A o B.  
+Tareas:
+- Tarea 1: Modelar la interfaz Producto y las clases de adiciones usando el patron Decorator para agregar ingredientes y calcular el precio de cada producto dinamicamente.  
+- Tarea 2: Desarrollar la clase PedidoBuilder para construir el pedido paso a paso y validar las reglas (maximo 5 productos, minimo $3.500 y restriccion de bloques para entrega en salon).  
+- Tarea 3: Implementar la logica de seleccion del tipo de entrega (consumo local $0, para llevar $300 o salon $1.000) e integrarla en la liquidacion total del pedido.
