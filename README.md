@@ -28,3 +28,8 @@
 
 <img width="570" height="111" alt="image" src="https://github.com/user-attachments/assets/b26e2378-9ec9-4039-81d6-b90c04b6e5ed" />
 
+---
+
+# Desarrollo parcial
+
+1. <>
