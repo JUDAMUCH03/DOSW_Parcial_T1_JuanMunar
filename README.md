@@ -5,6 +5,7 @@
 ## Información:
 * **Nombre Completo:** Juan David Munar Chaparro
 * **Grupo DOSW:** 
+* **LINK REPO:** https://github.com/JUDAMUCH03/DOSW_BITACORA.git
 * **Enunciado Asignado**:
 
 ---
@@ -26,3 +27,4 @@
 ### 3. Validación de Maven
 
 <img width="570" height="111" alt="image" src="https://github.com/user-attachments/assets/b26e2378-9ec9-4039-81d6-b90c04b6e5ed" />
+
