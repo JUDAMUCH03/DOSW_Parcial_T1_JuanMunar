@@ -94,3 +94,8 @@ Flujo Basico:El usuario pidio correctamente su pedido, visibilizando el total de
 Flujo Alterno: EL usuario tiene el resumen de su pedido, pero aparecen cosas que no pidio o el precio no es el adecuado. El usuario debe darle a cancelar pedido.
 
 Imagenes Figma:
+
+<img width="335" height="692" alt="Screenshot 2026-09-01 155423" src="https://github.com/user-attachments/assets/90fe9a56-c67b-438c-b91c-a8c1235f3175" />
+
+<img width="331" height="697" alt="Screenshot 2026-09-01 155431" src="https://github.com/user-attachments/assets/c6ef16c2-438f-4bf7-ba28-d80331e23e8f" />
+
