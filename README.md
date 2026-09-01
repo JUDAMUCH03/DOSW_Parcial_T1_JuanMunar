@@ -32,4 +32,4 @@
 
 # Desarrollo parcial
 
-1. <>
+1. <img width="1002" height="582" alt="C4drawio" src="https://github.com/user-attachments/assets/7f14bc71-1b7a-4fdf-9e1d-c9c3ed4180d8" />
